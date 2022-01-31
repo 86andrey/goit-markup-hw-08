@@ -1,0 +1,32 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.about-list {
+    display: flex;
+}
+
+.about-list__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.about-list__icon {
+    display: flex;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color:  var(--portfolio-btn-color);
+    margin-bottom: 30px;
+}
+
+.about-list__image {
+    display: flex;
+    justify-content: center;
+}
+
+.about-list__text {
+    line-height: 1.71;
+    max-width: 270px;
+}
