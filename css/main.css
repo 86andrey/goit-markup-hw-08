@@ -1186,7 +1186,10 @@ body {
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: baseline;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1197,6 +1200,11 @@ body {
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container_block {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
   .footer-container_block {
     margin-bottom: 60px;
   }
@@ -1328,22 +1336,12 @@ body {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 768px) {
-  .footer-join {
-    margin-left: 70px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-join {
     margin-left: 70px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .footer-input {
-    margin-left: 93px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .footer-input {
     margin-left: 93px;
@@ -1548,11 +1546,11 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-input__sign {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     border: 1px solid var(--footer-input-bc);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
