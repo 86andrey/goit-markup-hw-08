@@ -20,6 +20,8 @@
 
 .header-container {
     @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: flex;
+        align-items: center;
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -86,8 +88,8 @@
 }}
 
 .site-nav {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-        display: flex;
+    @media screen and (max-width: 767px) {
+        display: none;
     }
     @media screen and (min-width: 768px) {
         display: flex;
@@ -135,6 +137,9 @@
 }
 
 .auth-nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
     display: flex;
     margin-left: auto;
 }
@@ -180,3 +185,21 @@
     .auth-nav__item:focus & {
         fill: var(--accent-color);}
     }
+
+
+.burger-button {
+    @media screen and (max-width: 767px) {
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin: 10px 15px 10px auto;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

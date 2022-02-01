@@ -1,0 +1,116 @@
+.menu-container {
+    position: fixed;
+    top: 0;
+    width: 480px;
+    // min-height: 480px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04),
+            0px 2px 4px rgba(0, 0, 0, 0.08),
+            0px 1px 3px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms linear;
+
+}
+
+.mobile-menu {
+    padding-left: 40px;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu__link {
+    display: inline-block;
+    padding-bottom: 32px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+text-align: center;
+letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
+
+    &--current {
+        position: relative;
+        color: var(--accent-color);
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container button {
+    margin-left: 436px;
+}
+
+.mobile-nav__tel {
+    padding-bottom: 32px;
+}
+
+.menu-panel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.menu-panel__item {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #2196F3;
+}
+.menu-panel__item:not(:last-child)::after {
+    position: relative;
+    content: "";
+    width: 0px;
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-left: 10px;
+}
+.menu-panel__item {
+    margin-right: 10px;
+}
+
+
+.mobile-nav__link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-nav {
+    padding-top: 302px;
+    padding-bottom: 64px;
+    padding-left: 40px;
+}
+
+.mobile-nav__link--size {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: 0.02em;
+}
