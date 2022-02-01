@@ -1,17 +1,77 @@
 .header {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        position: relative;
+    border-bottom-color: var(--header-border-bottom);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    }
+    @media screen and (min-width: 768px) {
+        position: relative;
+    border-bottom-color: var(--header-border-bottom);
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    }
+    @media screen and (min-width: 1200px) {
     position: relative;
     border-bottom-color: var(--header-border-bottom);
     border-bottom-width: 1px;
     border-bottom-style: solid;
-}
+}}
 
 .header-container {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    align-items: center;
+    justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
+}}
 
 .header-logo {
+    margin-left: 15px;
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    .header-logo__text {
+        color: var(--title-text-color);
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        margin-left: 15px;
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    .header-logo__text {
+        color: var(--title-text-color);
+    }
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 15px;
+    color: var(--accent-color);
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    .header-logo__text {
+        color: var(--title-text-color);
+    }
+    }
+    @media screen and (min-width: 1200px) {
     margin-right: 93px;
     color: var(--accent-color);
     font-family: Raleway;
@@ -23,11 +83,18 @@
     .header-logo__text {
         color: var(--title-text-color);
     }
-}
+}}
 
 .site-nav {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        display: flex;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+    @media screen and (min-width: 1200px) {
     display: flex;
-}
+}}
 
 .site-nav__link {
     display: block;
@@ -111,6 +178,5 @@
 
     .auth-nav__item:hover &,
     .auth-nav__item:focus & {
-        fill: var(--accent-color);
+        fill: var(--accent-color);}
     }
-}

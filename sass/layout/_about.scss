@@ -18,6 +18,7 @@
 
 .about-list {
     @media screen and (min-width: 480px) {
+        padding: 0 15px;
     }
 
 @media screen and (min-width: 768px) {
@@ -41,7 +42,7 @@
 
 .about-list__item:not(:last-child) {
     @media screen and (min-width: 480px) {
-        // margin-bottom: 30px;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 768px) {}
@@ -102,9 +103,7 @@
 
 .about-list__text {
     @media screen and (min-width: 480px) {
-        line-height: 1.71;
-        // max-width: 450px;
-        padding: 0 15px;
+        line-height: 1.71; 
     }  
 
     @media screen and (min-width: 768px) {
