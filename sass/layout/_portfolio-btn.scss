@@ -24,11 +24,25 @@
 }
 
 .list-btn {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 768px) {  
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    }
 }
 
 .list-btn__item:not(:last-child) {
     margin-right: 8px;
+}
+
+.list-btn__item:nth-child(-n + 3) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 }
