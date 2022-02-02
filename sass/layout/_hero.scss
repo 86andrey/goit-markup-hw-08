@@ -1,11 +1,50 @@
 .hero {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        background-color: var(--background-color-hero);
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 90vw;
+    }
+    @media screen and (min-width: 768px) {
+        background-color: var(--background-color-hero);
+        padding-top: 200px;
+        padding-bottom: 200px;
+        width: 768px;
+    }
+        @media screen and (min-width: 1200px) {
     background-color: var(--background-color-hero);
     padding-top: 200px;
     padding-bottom: 200px;
+    width: 1200px;
+        }
 }
 
 .overlay {
-    max-width: 1600px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 480px;
+        height: 100%;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        var(--overlay-bg-image),
+        var(--overlay-bg-image)),
+        url('../images/Img-hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    @media screen and (min-width: 768px) {
+        width: 768;
+        height: 100%;
+        margin: 0 auto;
+        background-image: linear-gradient(
+            var(--overlay-bg-image),
+            var(--overlay-bg-image)),
+            url('../images/Img-hero.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;}
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(
@@ -15,6 +54,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    }
 }
 
 .hero-title {

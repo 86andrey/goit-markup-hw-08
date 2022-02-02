@@ -4,18 +4,23 @@
     border-bottom-color: var(--header-border-bottom);
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    width: 100vw;
+    margin-right: 0;
+    padding: 0;
     }
     @media screen and (min-width: 768px) {
         position: relative;
     border-bottom-color: var(--header-border-bottom);
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    width: 768px;
     }
     @media screen and (min-width: 1200px) {
     position: relative;
     border-bottom-color: var(--header-border-bottom);
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    width: 1200px;
 }}
 
 .header-container {
