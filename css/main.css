@@ -1373,8 +1373,7 @@ body {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .menu-container {
-    display: flex;
-    width: 480px;
+    width: 100%;
     position: fixed;
     top: 0;
     background: #FFFFFF;
