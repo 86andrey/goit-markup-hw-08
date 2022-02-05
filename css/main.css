@@ -367,12 +367,13 @@ body {
 }
 
 .overlay {
+  max-width: 1600px;
+  height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-mob1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100%;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
