@@ -1088,6 +1088,11 @@ body {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-input__list {
+    display: flex;
+  }
+}
 
 .footer-join__link {
   display: flex;
