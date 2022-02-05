@@ -56,6 +56,7 @@
 }
 
 .portfolio-card__content {
+    flex-grow: 1;
     position: relative;
     padding: 20px 24px;
     border-right: 1px solid var(--portfolio-border-color);
@@ -65,7 +66,9 @@
 }
 
 .portfolio-card__link {
-    display: block; 
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
     text-decoration: none;
 
     &:hover, &:focus {
