@@ -368,20 +368,41 @@ body {
 
 .overlay {
   margin: 0 auto;
-  background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/Img-hero.jpg");
+  background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-mob1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-mob2x.jpg");
+  }
 }
 @media screen and (max-width: 767px) {
   .overlay {
     width: 100%;
   }
 }
+@media screen and (min-width: 768px) {
+  .overlay {
+    background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-tab1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-tab2x.jpg");
+  }
+}
 @media screen and (min-width: 1200px) {
   .overlay {
     width: 1200px;
+    background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-desk1x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-desk2x.jpg");
   }
 }
 
@@ -414,6 +435,7 @@ body {
 
 .backdrop {
   position: fixed;
+  overflow-y: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -1409,10 +1431,13 @@ body {
 
 .menu-panel {
   margin-bottom: 48px;
+  display: flex;
+  padding: 0;
 }
 
 .menu-panel__list {
   padding-top: 64px;
+  margin: 0 auto;
 }
 
 .menu-panel__item {
