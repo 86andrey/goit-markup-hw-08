@@ -5,20 +5,23 @@
 }
 
 .footer-container {
-    @media screen and (max-width: 767px) {
-        text-align: center;
-    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: baseline;
+    }
+
+    @media screen and (max-width: 1199px) {
         text-align: center;
     }
 }
 
 .footer-container_block {
+    @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    }
 }
 
 .footer-logo {
@@ -26,10 +29,15 @@
     color: var(--accent-color);
     font-family: Raleway;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 1.16;
     text-decoration: none;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+    }
 }
 
 .footer-logo__text {
@@ -37,8 +45,10 @@
 }
 
 .footer-address__item {
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
-
+    }
     .footer-address__link--white {
         color: var(--primary-white-color);
     }
@@ -47,11 +57,13 @@
 .footer-address__link {
     display: block;
     font-style: normal;
-    line-height: 1.17;
-    text-decoration: none;
-    margin-bottom: 9px;
+    line-height: 1.71;
+    text-decoration: none;   
     color: var(--color-footer-link);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+    line-height: 1.17;
+    }
 
     &:hover, &:focus {
     color: var(--accent-color);
@@ -62,16 +74,7 @@
     @media screen and (max-width: 767px) {
         margin-bottom: 60px;
     }
-
-    // @media screen and (min-width: 1200px) {
-    // margin-left: 70px;
-    // }
 }
-
-// .footer-input {
-//     @media screen and (min-width: 1200px) {
-//     margin-left: 93px;}
-// }
 
 .footer-join__text,
 .footer-input__text{ 
@@ -136,13 +139,15 @@
     background-color: var(--background-color-hero);
     color: var(--primary-white-color);
     font-size: 16px;
+    line-height: 1.25;
+    
 
     &::placeholder {
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 1.25;
         display: flex;
         align-items: center;
         letter-spacing: 0.03em;
@@ -166,5 +171,6 @@
     @media screen and (min-width: 1200px) {
         width: 358px;
         margin-right: 12px;
+        margin-bottom: 0;
     }
 }

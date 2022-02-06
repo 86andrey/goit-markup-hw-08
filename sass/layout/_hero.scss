@@ -2,14 +2,7 @@
     background-color: var(--background-color-hero);
     padding-top: 200px;
     padding-bottom: 200px;
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-    }
+    max-width: 1600px;
 }
 
 .overlay {
@@ -54,7 +47,7 @@
         } 
 
     @media screen and (min-width: 1200px) {
-        width: 1200px; 
+        max-width: 1600px; 
         background-image: linear-gradient(
         var(--overlay-bg-image),
         var(--overlay-bg-image)),
