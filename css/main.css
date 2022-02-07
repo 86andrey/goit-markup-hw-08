@@ -356,10 +356,15 @@ body {
   padding-bottom: 200px;
   max-width: 1600px;
 }
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-image: linear-gradient(var(--overlay-bg-image), var(--overlay-bg-image)), url("../images/header-mob1x.jpg");
   background-repeat: no-repeat;
@@ -411,7 +416,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .hero-title {
     font-family: Roboto;
     font-style: normal;
@@ -422,6 +427,11 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 420px) and (max-width: 1199px) {
+  .hero-title {
+    width: 400px;
   }
 }
 
@@ -1413,12 +1423,16 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
   padding: 32px;
   background-color: var(--primary-white-color);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+}
+@media screen and (min-width: 420px) {
+  .menu-container {
+    width: 100vw;
+  }
 }
 
 .menu-container.is-open {
