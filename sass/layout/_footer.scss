@@ -8,10 +8,14 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        
         align-items: baseline;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
 
     @media screen and (max-width: 1199px) {
         text-align: center;
@@ -21,6 +25,9 @@
 .footer-container_block {
     @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
     }
 }
 
@@ -123,6 +130,12 @@
     height: 20px;
     width: 20px;
     fill: var(--primary-white-color);
+}
+
+.footer-input {
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
 }
 
 .footer-input__icon {
